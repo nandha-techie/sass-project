@@ -1,0 +1,249 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: arial;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#top {
+  width: 100%;
+  background-color: #032f3e;
+  min-height: 50px;
+  top: 0;
+  left: 0;
+}
+#top #hamburger {
+  display: none;
+}
+#top .main_nav {
+  width: 89%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  height: 0;
+}
+#top .main_nav li {
+  width: 16.6666666667%;
+}
+#top .main_nav li a {
+  color: #f8f9fb;
+  text-align: center;
+  display: block;
+  padding: 16px;
+  font-size: 1.6rem;
+}
+#top .main_nav li a:hover {
+  background-color: #04455b;
+}
+@media screen and (max-width: 576px) {
+  #top .main_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 888;
+    display: none;
+  }
+  #top .main_nav li {
+    width: 80%;
+    margin: auto;
+  }
+  #top .show_menu {
+    display: block;
+    opacity: 1;
+    height: auto;
+    -webkit-animation: slide-down 1s ease;
+            animation: slide-down 1s ease;
+  }
+  #top #hamburger {
+    display: block;
+    position: fixed;
+    top: 2.5%;
+    right: 12%;
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#lead_banner {
+  width: 100%;
+  position: relative;
+}
+#lead_banner .banner_desc {
+  position: absolute;
+  top: 50px;
+  right: 7%;
+}
+#lead_banner .banner_desc h2, #lead_banner .banner_desc h3 {
+  font-size: 7rem;
+  color: #fff;
+  text-align: right;
+}
+#lead_banner .banner_desc h2 {
+  font-weight: bold;
+}
+#lead_banner .banner_desc h3 {
+  font-weight: 300;
+}
+@media screen and (max-width: 576px) {
+  #lead_banner .banner_desc {
+    top: 15%;
+  }
+  #lead_banner .banner_desc h2, #lead_banner .banner_desc h3 {
+    font-size: 1.6rem;
+  }
+  #lead_banner .banner_desc h3 {
+    margin-top: 10px;
+  }
+}
+
+#services {
+  width: 100%;
+}
+#services .title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: #032f3e;
+}
+#services .container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2rem;
+}
+#services .service_type {
+  text-align: center;
+}
+#services .service_type img {
+  width: 100%;
+  display: block;
+}
+#services .service_type a {
+  font-size: 1.6rem;
+  color: #032f3e;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+#services .service_type a:hover {
+  color: #3e1203;
+}
+
+#lesson {
+  width: 100%;
+  position: relative;
+}
+#lesson .banner_2 {
+  position: relative;
+  display: block;
+  height: auto;
+}
+#lesson .lessons_desc {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 40%;
+  color: #fff;
+}
+#lesson .lessons_desc h2, #lesson .lessons_desc h3 {
+  font-size: 7rem;
+}
+#lesson .lessons_desc h2 {
+  font-weight: bold;
+}
+#lesson .lessons_desc h3 {
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+#lesson .lessons_desc p {
+  font-size: 2rem;
+  margin: 30px 0;
+  line-height: 3rem;
+}
+@media screen and (max-width: 576px) {
+  #lesson .lessons_desc {
+    top: 10%;
+    width: 60%;
+  }
+  #lesson .lessons_desc h2, #lesson .lessons_desc h3 {
+    font-size: 2rem;
+  }
+  #lesson .lessons_desc h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  #lesson .lessons_desc p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 10px 0;
+  }
+}
+
+#projects {
+  width: 100%;
+  padding-bottom: 20px;
+}
+#projects .title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: #032f3e;
+}
+#projects .project_container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#projects img {
+  width: 20%;
+}/*# sourceMappingURL=style.css.map */

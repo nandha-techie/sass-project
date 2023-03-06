@@ -1,0 +1,11 @@
+@mixin title{
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0;
+  color: $deepBlue;
+}
+@mixin mQ($arg...){
+  @media screen and (max-width: nth($arg, 1)){
+    @content;
+  }
+}
